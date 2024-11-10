@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/smoothiestyle.css">
+    <script src="/js/smoothie.js" defer></script>
+    <title>Smoothie Order Form</title>
+</head>
+<body>
+    <!--container for form-->
+    <div class="container">
+        <h1>Choose Your Smoothie</h1>
+        <!--form for smoothie order-->
+        <form id="smoothieOrderForm">
+            <!--Options for smoothie flavor-->
+            <label for="flavor">Smoothie Base Flavor:</label>
+            <select name="smoothie" id="smoothie">
+                <option value="strawberry">Strawberry</option>
+                <option value="banana">Banana</option>
+                <option value="mango">Mango</option>
+                <option value="pineapple">Pineapple</option>
+                <option value="peach">Peach</option>
+                <option value="cherry">Cherry</option>
+            </select>
+
+            <!--Options for milk type-->
+            <label for="milkType">Milk Type:</label>
+            <select name="milkType" id="milkType">
+                <option value="oat">Oat</option>
+                <option value="2%">2%</option>
+                <option value="almond">Almond</option>
+                <option value="soy">Soy</option>
+            </select>
+
+            <!--Options for extra fruits, using checkboxes-->
+            <label>Add Fruits - $0.90 each.</label>
+            </label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="fruits" value="strawberry">Strawberry</label>
+                <label><input type="checkbox" name="fruits" value="banana">Banana</label>
+                <label><input type="checkbox" name="fruits" value="mango">Mango</label>
+                <label><input type="checkbox" name="fruits" value="pineapple">Pineapple</label>
+                <label><input type="checkbox" name="fruits" value="peach">Peach</label>
+                <label><input type="checkbox" name="fruits" value="cherry">Cherry</label>
+            </div>
+            <!--Size choice-->
+            <label for="size">Choose Size:</label>
+            <select id="size" name="size">
+                <option value="small">Small - $6.00</option>
+                <option value="medium">Medium - $7.50</option>
+                <option value="large">Large - $9.00</option>
+            </select>
+
+            <!--Order button-->
+            <button type="button" id="orderButton">Order Now</button>
+        </form>
+        <!--Div for order description output on submit-->
+        <div id="orderOutput"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+/* body style */
+body {
+    font-family: Tahoma;
+    background: linear-gradient(to right, #fbc2eb, #eed7a6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* main form header style */
+h1 {
+    color: #444;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* form container style */
+.container {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    max-width: 360px;
+    text-align: center;
+}
+
+/* form style */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* form label style */
+label {
+    font-weight: 500;
+    color: #333;
+}
+
+/* form input style */
+select, input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 0.9em;
+}
+
+/* form checkbox style */
+input[type="checkbox"] {
+    margin-right: 8px;
+    transform: scale(1.2);
+    accent-color: #d6a6d2;
+}
+
+/* checkbox formatting */
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* checkbox label style */
+.checkbox-group label {
+    font-size: 0.9em;
+    font-weight: 400;
+    color: #555;
+}
+
+/* form button style */
+button {
+    background-color: #d6a6d2;
+    color: white;
+    padding: 12px 0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+/* form button hover style */
+button:hover {
+    background-color: #a87ca5;
+}
+
+/* order output style for last paragraph */
+#orderOutput p:last-child {
+    margin-top: 20px;
+    font-size: 1em;
+    color: #333;
+    font-style: italic;
+}
+
+/* order output style for first paragraph */
+#orderOutput p:first-child {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
